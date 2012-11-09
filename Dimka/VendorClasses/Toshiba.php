@@ -16,7 +16,7 @@ class Toshiba extends Tv implements DigitalTvInterface
 
     public function checkDvbTuner()
     {
-        if ($this->dvbStandard == 'DVB-C') {
+        if ('DVB-C' == $this->dvbStandard) {
             $this->setCamModule();
         } else {
             echo "Your operator doesn't provide Digital Video Broadcasting technology.";
